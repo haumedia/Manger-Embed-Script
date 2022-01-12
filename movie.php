@@ -7,7 +7,7 @@ $dbClass = new Database();
 $conn = $dbClass->getDb(); 
 $id = (isset($_GET['id'])) ? $_GET['id'] : '';
 // Lấy Thông Tin Player
-	$sql = $conn->prepare("SELECT * FROM `movie` WHERE `tmdb`='$id'");
+	$sql = $conn->prepare("SELECT * FROM `movies` WHERE `tmdb`='$id'");
 		$sql->execute();
 		$fetch = $sql->fetch();	
 		$moviestitle = (!empty($fetch['tenphim'])) ? $fetch['tenphim'] : '';
@@ -51,6 +51,7 @@ $setting->execute();
 $st = $setting->fetch();
 $adblock = (!empty($st['adblock'])) ? $st['adblock'] : '';
 $loading = (!empty($st['loading'])) ? $st['loading'] : '';
+$jw_license = (!empty($st['jw_license'])) ? $st['jw_license'] : '';
 // Get ADS
 $getads = $conn->prepare("SELECT * FROM `ads`");
 $getads->execute();
@@ -72,8 +73,14 @@ $advast = (!empty($st['advast'])) ? $st['advast'] : '';
 <!--<script type="text/javascript" src="https://content.jwplatform.com/libraries/SPrnWq3s.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
-	<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/8.8.6/jwplayer.js"></script>
-	<script type="text/javascript">jwplayer.key="64HPbvSQorQcd52B8XFuhMtEoitbvY/EXJmMBfKcXZQU2Rnn";</script>
+<?php 
+if(isset($jw_license)){
+	echo '<script type="text/javascript" src="'.$jw_license.'"></script>';
+}else{
+	echo'<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/8.8.6/jwplayer.js"></script>
+	<script type="text/javascript">jwplayer.key="64HPbvSQorQcd52B8XFuhMtEoitbvY/EXJmMBfKcXZQU2Rnn";</script>';
+} 
+?>
 </head>
 <body>
 <div class="videocontent">

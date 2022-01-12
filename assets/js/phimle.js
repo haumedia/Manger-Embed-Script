@@ -33,7 +33,7 @@ function getplayerrow(player) {
           <td class="align-middle">${player.tenphim}</td>
           <td class="align-middle">${player.imdb}</td>
           <td class="align-middle">${player.tmdb}</td>
-          <td class="align-middle"><a class="btn btn-primary btn-sm" href="../movies/${player.tmdb}.html" target="_blank">Direct Links</a></td>
+          <td class="align-middle"><a class="btn btn-primary btn-sm" href="../movie.php?id=${player.tmdb}" target="_blank">Direct Links</a></td>
           <td class="align-middle"><a class="btn btn-success btn-sm manhung" href="#" data-bs-toggle="modal" data-bs-target="#userViewModal"
               title="Prfile" data-id="${player.id}">Embed Code</a></td>
           <td class="align-middle"><a class="btn btn-warning btn-sm edituser" href="#" data-bs-toggle="modal" data-bs-target="#userModal"
@@ -202,7 +202,7 @@ $(document).ready(function () {
       data: { id: pid, action: "getphimle" },
       success: function (player) {
         if (player) {
-          const manhung = `<textarea class="form-control" rows="5" autofocus="autofocus" onclick="this.select()">&lt;iframe src="${url}" frameborder="0" width="100%" height="100%" allowfullscreen="allowfullscreen"&gt; &lt;/iframe&gt;</textarea>`;
+          const manhung = `<textarea class="form-control" rows="5" autofocus="autofocus" onclick="this.select()">&lt;iframe src="${url}/movie.php?id=${player.tmdb}" frameborder="0" width="100%" height="100%" allowfullscreen="allowfullscreen"&gt; &lt;/iframe&gt;</textarea>`;
           $("#manhung").html(manhung);
         }
       },
