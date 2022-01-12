@@ -1,2 +1,4 @@
-# Manger-Embed-Script
-Methods For Online Movie Sites
+Please Support Me So I Can Maintain
+
+Buymeacoffee: https://buymeacoffee.com/?via=haun
+Paypal: https://paypal.me/hadprozz
