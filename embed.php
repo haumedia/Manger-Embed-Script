@@ -150,7 +150,7 @@
 					break;
 				
 				default:
-					 $sources = '{"label":"HD","type":"video\/mp4","file":"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"}';
+					 $sources = '{"label":"HD","type":"video\/mp4","file":"'.$link.'"}';
 					break;
 			}
 
