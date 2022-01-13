@@ -1,9 +1,0 @@
-RewriteEngine on
-RewriteRule ^movies/([a-zA-Z0-9_-]+).html$ movie.php?id=$1 [QSA,L]
-RewriteRule ^season/([a-zA-Z0-9_-]+).html$ admin/season.php?id=$1 [QSA,L]
-RewriteRule ^movies.html$ admin/index.php?phimle
-RewriteRule ^tvseries.html$ admin/index.php?phimbo
-RewriteRule ^ads.html$ admin/index.php?ads
-RewriteRule ^setting.html$ admin/index.php?setting
-RewriteRule ^logout.html$ admin/logout.php?logout=true
-RewriteRule ^login.html$ admin/login.php
