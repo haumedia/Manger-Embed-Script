@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteRule ^movies.html$ admin/index.php?phimle
+RewriteRule ^tvseries.html$ admin/index.php?phimbo
+RewriteRule ^ads.html$ admin/index.php?ads
+RewriteRule ^setting.html$ admin/index.php?setting
+RewriteRule ^logout.html$ admin/logout.php?logout=true
+RewriteRule ^login.html$ admin/login.php
+RewriteRule ^register.html$ admin/register.php
