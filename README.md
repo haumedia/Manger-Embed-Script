@@ -20,7 +20,7 @@ Paypal: <a href="https://paypal.me/hadprozz"><b>https://paypal.me/hadprozz</b></
   - Fix Subtitle Error <br />
   - More Ads Free Online Movie Streaming Sources <br />
  <b><h2>Demo Online : <a href="ttps://haumedia.me">https://haumedia.me</a></h2></b><br />
- <b><h2>Next Version</h2></b><br />
+ <b><h2>Installation Instructions</h2></b><br />
    1, Download the Extract and Upload <b>data.sql</b> Script to Phpmyadmin <br />
    2, Configuration At Includes/Database.php <br />
    3, Entering Or Registering At http://domain/admin <br />
