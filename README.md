@@ -3,6 +3,7 @@ Please Support Me So I Can Maintain
 <br />
 Buymeacoffee: <a href="https://buymeacoffee.com/?via=haun"><b>https://buymeacoffee.com/?via=haun</b></a><br />
 Paypal: <a href="https://paypal.me/hadprozz"><b>https://paypal.me/hadprozz</b></a>
+ <b>Friends and Family Methods</b>
 </center>
 <br />
  <b>Version 1.0</b><br />
